@@ -13,7 +13,7 @@ import com.mongodb.util.JSON;
  *
  */
 
-public class MongoManager {
+public class EasyMongo {
 
 	public MongoClient client;
 	public DB db;
@@ -25,7 +25,7 @@ public class MongoManager {
 	 * @param port Porta aonde o mongodb esta listando.
 	 * @param database Databse que a lib ira se conectar.
 	 */
-	public MongoManager(String host, int port, String database) {
+	public EasyMongo(String host, int port, String database) {
 		
 		try {
 			
@@ -46,7 +46,7 @@ public class MongoManager {
 	 * @param login Usuario que ira se requisitar login.
 	 * @param Senha do usuario.
 	 */
-	public MongoManager(String host, int port, String database, String login, String pwd) {
+	public EasyMongo(String host, int port, String database, String login, String pwd) {
 		
 		try {
 			
